@@ -493,7 +493,7 @@ a{
     min-width: 300px;
     padding: 1.5rem;
     border-radius: 16px;
-    box-shadow: -0.5rem 0.2rem 1rem rgb(121, 121, 121);
+    box-shadow: -0.5rem 0.2rem 1rem rgb(44, 44, 44);
     transition: .3s ease;
 }
 .card:hover{
