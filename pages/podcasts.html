@@ -36,31 +36,99 @@
         </div>
     </header>
 
-    <!-- --------------------       Top Section           ---------------   -->
-    
-    <Section class="jumbotron-container">
-        <div class="top-bg-cont">
-            <img src="/img/top-bg.png" alt="bg">
+    <!-- --------------------       Audio Player           ---------------   -->
+    <div class="top-title">
+        <p>Our Latest Podcast</p>
+    </div>
+    <Section class="podPlayer-container">
+        <div class="pod-img">
+            <img src="/img/articles/unity/unity.jpg" alt="image">
         </div>
-        <div class="section1-container">
-            <div class="top-text">
-                <p>Microsoft Tech</p>
-                <p class="club">Club</p>
-                <p class="enis">Enis</p>
+        <div class="pod-wrapper">
+            <div class="pod-header">
+                <div id="play-btn">&#x23F5;</div>
+                <div id="pause-btn">&#x23F8;</div>
+                <div class="pod-title">
+                    <p>Podcast Name</p>
+                </div>
             </div>
-            <div class="top-btn">
-                <a href="">Contact us</a>
+            <div class="pod-progress">
+                <img src="/img/icons/podplay.png" alt="img">
+                <div id="pod-progress"></div>
             </div>
-            <div class="top-socials">
-                <a href=""><i class="fab fa-facebook-f" ></i><span class="f"></span></a>
-                <a href=""><i class="fab fa-twitter" ></i><span class="t"></span></a>
-                <a href=""><i class="fab fa-linkedin-in" ></i><span class="l"></span></a>
+            <div class="pod-timer">
+                <p id="pod-time">00:00</p>
             </div>
-        </div>
-        <div class="section2-container">
-            <img src="/img/mtc-logo-bg.png" alt="logo">
+            <audio id="pod-audio">
+                <source src="/audio/Undertale_-_Megalovania.mp3" type="audio/mpeg"> 
+            </audio>
         </div>
     </Section>
+
+    <!-- --------------------       Old podcasts section          ---------------   -->
+    <section class="section-container">
+        <div class="top-title">
+            <p>Old Podcasts</p>
+        </div>
+        <div class="article-list">
+
+            <a href="/pages/articles/deveops.html">
+                <article class="article">
+                    <div class="image podcast-img">
+                        <img src="/img/articles/devops/devops1.png" alt="img">
+                    </div>
+                    <div class="desciption">
+                        <p class="title">Podcast Name #1</p>
+                        <p class="desc">Are you interested in DevOps ?
+                            You heard the term before, you don't know anything  or you want to learn more about it ? 
+                            Well !</p>
+                    </div>
+                </article>
+            </a>
+            <a href="/pages/articles/design.html">
+                <article class="article-w">
+                    <div class="image podcast-img">
+                        <img src="/img/articles/design/design.jpg" alt="img">
+                    </div>
+                    <div class="desciption">
+                        <p class="title">Podcast Name #2</p>
+                        <p class="desc">Developers and designers should be excited for new technologies and trends to code great apps. Following these design trends should be implemented to create valuable apps.</p>
+                    </div>
+                </article>
+            </a>
+            <a href="/pages/articles/unity.html">
+                <article class="article">
+                    <div class="image podcast-img">
+                        <img src="/img/articles/unity/unity.jpg" alt="img">
+                    </div>
+                    <div class="desciption">
+                        <p class="title">Podcast Name #3</p>
+                        <p class="desc">Is game development a dream of yours ? 🎮
+                            Well check this article about Unity, a nowadays trend 🔥 in the Game development industry.</p>
+                    </div>
+                </article>
+            </a>
+           
+            
+        
+
+
+            
+            <!-- <a href="">
+                <article class="article">
+                    <div class="image">
+                        <img src="/img/articles" alt="img">
+                    </div>
+                    <div class="desciption">
+                        <p class="title"></p>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+            </a> -->
+
+        </div>
+    </section>
+
 
     <!-- -------------         Footer     -------------- -->
     <footer class="footer-container">
@@ -70,9 +138,9 @@
 
         <div class="socials-fsection">
             <div class="socials">
-                <a href=""><i class="fab fa-facebook-f" ></i><span class="f"></span></a>
-                <a href=""><i class="fab fa-twitter" ></i><span class="t"></span></a>
-                <a href=""><i class="fab fa-linkedin-in" ></i><span class="l"></span></a>
+                <a href=""><i class="fab fa-facebook-f"></i><span class="f"></span></a>
+                <a href=""><i class="fab fa-twitter"></i><span class="t"></span></a>
+                <a href=""><i class="fab fa-linkedin-in"></i><span class="l"></span></a>
             </div>
             <div class="copyright">
                 <p>Copyright &copy; and legal stuff idk 2021</p>

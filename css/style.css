@@ -5,6 +5,7 @@
     --color-black: #313131;
     --color-blue: #0F6198;
     --color-grey: #F6F4F4;
+    --color-green: #269C81;
     --color-blue-hover: #2c89c6;
     --color-light-blue: #E8F2F4;
 }
@@ -808,3 +809,113 @@ a{
 
 
 
+/*     ************************        Podcasts Page       **************************   */
+/*     ****************************************************************************   *
+
+/*     **************         Podcast audio player Section        ***************   */
+
+
+.podPlayer-container{
+    display: flex;
+    margin: 5rem 5rem 10rem;
+    padding: 2rem 5rem 1rem;
+    background-color: var(--color-grey);
+    align-content: center;
+    justify-content: center;
+}
+.pod-img{
+    flex: 25%;
+    margin: auto;
+}
+.pod-img img{
+    width: 100%;
+    min-width: 150px;
+    border-radius: .2rem;
+}
+.pod-wrapper{
+    flex: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto 0 3rem;
+}
+.pod-header{
+    display: flex;
+    align-items: center;
+}
+.pod-header #play-btn, #pause-btn{
+    background-color: var(--color-green);
+    color: #fff;
+    font-size: 2rem;
+    padding: .5rem .8rem;
+    border-radius: 50%;
+    margin: 0 3rem 0 1rem;
+    cursor: pointer;
+}
+.pod-header #play-btn:hover, #pause-btn:hover{
+    color: rgb(211, 255, 239);
+    box-shadow: 0 0 7px rgb(174, 174, 174);
+}
+.pod-header #play-btn:active, #pause-btn:active{
+    transform: translate(1px, 1px);
+}
+#pause-btn{
+    display: none;
+}
+.pod-header .pod-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+.pod-progress{
+    margin: 1rem;
+    height: 7vw;
+    width: 60vw;    
+    position: relative;
+}
+.pod-progress img{
+    display: block;
+    margin: -.1rem -.3rem;
+    height: 103%;
+    width: 101%;
+    position: absolute;
+    top: 0;
+}
+#pod-progress{
+    background-color: var(--color-green);
+    width: 0;
+    height: 100%;
+    transition: all 1s linear;
+    z-index: -10;
+}
+.pod-timer{
+    margin: 0 0 .5rem 1rem;
+    font-size: .9rem;
+}
+.podcast-img{
+    max-width: 400px;
+}
+
+@media only screen and (max-width: 1000px){
+    .pod-img{
+        display: none;
+    }
+    .pod-wrapper{
+        flex: 90%;
+        margin: auto 0 0 1rem;
+    }
+    .pod-progress{
+        margin: 1rem;
+        height: 10vw;
+        width: 65vw;    
+    }
+    .pod-progress img{
+        display: block;
+        margin: -.1rem -.3rem;
+        height: 103%;
+        width: 101%;
+        position: absolute;
+        top: 0;
+    }
+
+}
